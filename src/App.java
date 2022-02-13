@@ -3,7 +3,7 @@
 // Входная точка в программу/приложение
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         // Здесь создайте экземпляры Model, View и Controller,
         // на основании соответствующих конструкторов.

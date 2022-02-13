@@ -4,7 +4,7 @@ package views;
 import java.util.Scanner;
 
 // View
-public class SalesView {
+public class SalesView  {
 
 
     String title;
