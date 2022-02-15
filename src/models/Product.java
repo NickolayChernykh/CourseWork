@@ -59,7 +59,6 @@ public class Product implements Income, Fiscal {
 
     }
 
-
     // Расчёт суммы налога с продаж.
     // здесь ...
 
@@ -67,7 +66,6 @@ public class Product implements Income, Fiscal {
     public double tax(double profit, double taxRate) {
         return profit * taxRate;
     }
-
 
     // Расчёт чистого дохода, после уплаты налога.
     // здесь ...

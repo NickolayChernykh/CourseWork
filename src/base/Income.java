@@ -5,11 +5,9 @@ package base;
 //Товар - штучный, т.е. в штуках.
 //6) Чистый доход = Доход - Налог.
 public interface Income {
-    default double profit(int quantity, double price) {
-        return 0;
-    }
-    default double profit(double profits, double tax){
 
-        return 0;
-    }
+    double profit(int quantity, double price);
+
+    double profit(double profits, double tax);
+
 }
