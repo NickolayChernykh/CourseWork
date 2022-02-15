@@ -4,6 +4,7 @@ package base;
 // 4) Доход = Количество товара х Цена.
 //Товар - штучный, т.е. в штуках.
 //6) Чистый доход = Доход - Налог.
+
 public interface Income {
 
     double profit(int quantity, double price);
