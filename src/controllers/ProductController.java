@@ -27,21 +27,21 @@ public class ProductController {
         String productName = model.getName();
 
         // 2) вызов методов расчетов доходов и налога;
-        double profitBrutto = model.profit(model.getQuantity(), model.getPrice()); //до уплаты налога.
-        double tax = model.tax(profitBrutto, model.TAX_RATE); // налог
-        double profitNetto = model.profit(profitBrutto, tax); // после налога
+        double profitBrut = model.profit(model.getQuantity(), model.getPrice()); //до уплаты налога.
+        double tax = model.tax(profitBrut, model.TAX_RATE); // налог
+        double profitNett = model.profit(profitBrut, tax); // после налога
 
         // 3) округление расчетных значений;
-        String sProfBrutto = Rounder.round(profitBrutto);
-        String sProfNetto = Rounder.round(profitNetto);
+        String sProfBrt = Rounder.round(profitBrut);
+        String sProfNtt = Rounder.round(profitNett);
         String sTax = Rounder.round(tax);
 
         // 4) вывод расчетов по заданному формату. String output = "[здесь должен быть вывод по формату]";
 
         String output = "Наименование товара: " + productName +"\n"+
-                "Общий доход (грн.): "+ sProfBrutto + "\n"+
+                "Общий доход (грн.): "+ sProfBrt + "\n"+
                 "Сумма налога (грн.): " + sTax + "\n"+
-                "Чистый доход (грн.): " + sProfNetto;
+                "Чистый доход (грн.): " + sProfNtt;
 
         view.getOutput(output);
     }
