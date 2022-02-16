@@ -38,9 +38,9 @@ public class ProductController {
 
         // 4) вывод расчетов по заданному формату. String output = "[здесь должен быть вывод по формату]";
 
-        String output = "Наименование товара: " + productName +"\n"+
-                "Общий доход (грн.): "+ sProfBrt + "\n"+
-                "Сумма налога (грн.): " + sTax + "\n"+
+        String output = "Наименование товара: " + productName + "\n" +
+                "Общий доход (грн.): " + sProfBrt + "\n" +
+                "Сумма налога (грн.): " + sTax + "\n" +
                 "Чистый доход (грн.): " + sProfNtt;
 
         view.getOutput(output);

@@ -47,9 +47,7 @@ public class Product implements Income, Fiscal {
     public double getTAX_RATE() {
         return TAX_RATE;
     }
-
     // Переопределите методы реализуемых интерфейсов.
-
     // Расчёт дохода от продаж, до уплаты налога.
     // здесь ...
 
@@ -58,7 +56,6 @@ public class Product implements Income, Fiscal {
         return quantity * price;
 
     }
-
     // Расчёт суммы налога с продаж.
     // здесь ...
 
@@ -66,7 +63,6 @@ public class Product implements Income, Fiscal {
     public double tax(double profit, double taxRate) {
         return profit * taxRate;
     }
-
     // Расчёт чистого дохода, после уплаты налога.
     // здесь ...
 

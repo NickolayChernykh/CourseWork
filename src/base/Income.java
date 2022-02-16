@@ -7,6 +7,7 @@ package base;
 
 public interface Income {
 
+
     double profit(int quantity, double price);
 
     double profit(double profits, double tax);

@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 /**
  * Created by Chernykh on 13.02.2022
  */
+
 public class Rounder {
 
     public static String round(double number) {
