@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 // Валидатор ввода значений
 public class Validator  {
-
     // Валидация ввода наименования
     public static String validateName(Scanner scanner){
         String str = scanner.nextLine().trim();

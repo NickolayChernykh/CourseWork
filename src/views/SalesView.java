@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 // View
 public class SalesView {
-
     String title;
     String name;
     int quantity;

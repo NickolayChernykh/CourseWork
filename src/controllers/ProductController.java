@@ -7,7 +7,6 @@ import views.SalesView;
 
 // Controller
 public class ProductController {
-
     Product model;
     SalesView view;
 

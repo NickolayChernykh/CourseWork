@@ -7,7 +7,6 @@ import base.Income;
 // Model.
 // Примените интерфейсы Income, Fiscal, переопределите их методы.
 public class Product implements Income, Fiscal {
-
     // Объявление полей модели
     private String name;
     private int quantity;
